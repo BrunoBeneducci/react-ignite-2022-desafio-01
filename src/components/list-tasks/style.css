@@ -97,11 +97,19 @@
 }
 
 .list-tasks-content-item-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     height: 15px;
     width: 15px;
     border: 2px solid var(--blue-500);
     border-radius: 50px;
     cursor: pointer;
+}
+
+.list-tasks-content-item-status img {
+    width: 10px;
 }
 
 .list-tasks-content-item-active .list-tasks-content-item-status {

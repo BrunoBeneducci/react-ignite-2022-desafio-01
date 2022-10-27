@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import iconClipboard from '../../assets/icon-clipboard.svg';
 import iconTrash from '../../assets/icon-trash.svg';
+import iconCheck from '../../assets/icon-check.svg';
 import './style.css';
 
 interface List {
@@ -89,8 +90,12 @@ const ListTasks = () => {
             {tasks.length > 0 && 
               tasks.map(item => (
                 <div className={`list-tasks-content-item ${item.isComplete && 'list-tasks-content-item-active'}`} key={item.id}>
-                  <div className='list-tasks-content-item-status' onClick={() => handleChangeStatus(item.id)}></div>
+                  <div className='list-tasks-content-item-status' onClick={() => handleChangeStatus(item.id)}>
+                    {item.isComplete && <img src={iconCheck} alt="Icone de feito" />}
+                  </div>
+
                   <p>{item.content}</p>
+
                   <img src={iconTrash} alt="Icone de lixeira" className='list-tasks-content-item-icon' onClick={() => handleRemoveItem(item.id)} />
                 </div>
               ))
