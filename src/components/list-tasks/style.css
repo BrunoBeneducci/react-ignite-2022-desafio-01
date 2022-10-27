@@ -1,0 +1,123 @@
+/* input */
+.input-task {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -25px;
+}
+
+.input-task input,
+.input-task button {
+    height: 50px;
+    color: var(--white);
+}
+
+.input-task input {
+    background-color: var(--gray-500);
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+}
+
+
+.list-tasks {
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* list tasks */
+.list-tasks-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-bottom: 1px solid var(--gray-500);
+}
+
+.list-tasks-header span {
+    padding: 2px 3px;
+    background-color: var(--gray-500);
+    color: var(--white);
+    padding: 3px 12px;
+    border-radius: 50px;
+    margin-left: 5px;
+}
+
+.list-tasks-header-left {
+    color: var(--blue-500);
+    font-weight: 700;
+}
+
+.list-tasks-header-right {
+    color: var(--purple-500);
+    font-weight: 700;
+}
+
+.list-tasks-content {
+    padding: 30px 0;
+}
+
+.list-tasks-content p {
+    color: var(--gray-300);
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.list-tasks-content-empty {
+    text-align: center;
+}
+
+.list-tasks-content-empty img {
+    margin-bottom: 10px;
+}
+
+.list-tasks-content-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    border-radius: 8px;
+    padding: 20px 15px;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.list-tasks-content-item:last-of-type {
+    margin-bottom: 0;
+}
+
+.list-tasks-content-item p {
+    color: var(--white);
+    flex: 1;
+}
+
+.list-tasks-content-item-active p {
+    color: var(--gray-300);
+    text-decoration: line-through;
+}
+
+.list-tasks-content-item-status {
+    height: 15px;
+    width: 15px;
+    border: 2px solid var(--blue-500);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.list-tasks-content-item-active .list-tasks-content-item-status {
+    border: 2px solid var(--purple-500);
+    background-color: var(--purple-500);
+}
+
+.list-tasks-content-item-status:hover {
+    opacity: 0.6;
+}
+
+.list-tasks-content-item-icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+.list-tasks-content-item-icon:hover {
+    opacity: 0.6;
+}

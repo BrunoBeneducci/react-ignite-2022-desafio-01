@@ -1,0 +1,19 @@
+.input-task {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -25px;
+}
+
+.input-task input,
+.input-task button {
+    height: 50px;
+    color: var(--white);
+}
+
+.input-task input {
+    background-color: var(--gray-500);
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+}
